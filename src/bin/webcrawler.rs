@@ -1,4 +1,3 @@
-use rand::Rng;
 use std::collections::{HashMap, VecDeque};
 extern crate clap;
 use clap::{App, Arg};
@@ -258,7 +257,6 @@ fn send_cookies(cookies: &HashMap<String, String>) -> String {
 
 fn main() {
     pretty_env_logger::init();
-    let mut rng = rand::thread_rng();
     debug!("Webcrawler Started");
     let args = App::new("CS3700 Project 4")
         .author("Nelson Chan <chan.chak@husky.neu.edu>")
