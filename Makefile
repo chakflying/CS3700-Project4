@@ -15,8 +15,7 @@ bench:
 
 build:
 	@$(CARGO) build --release
-	cp target/release/3700send ./
-	cp target/release/3700recv ./
+	cp target/release/webcrawler ./
 
 check:
 	@$(CARGO) check
